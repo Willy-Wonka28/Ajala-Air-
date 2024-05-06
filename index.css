@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+@keyframes slide-in{
+  from{
+    transform: translateX(-500px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+  }
+
+  header{
+    height:50px;
+    margin-block: 15px;
+    padding-inline: 35px;
+    font-size: 18px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1{
+    margin-left: 45px;
+  }
+
+  nav{
+    width: 500px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav div a{
+    color:black;
+  }
+
+  .active{
+    width: 185px;
+    height:50px;
+    display:flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #174bcf;
+    color:white;
+    padding: .3em;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .run-off{
+    width: 100%;
+    background-image:url(Ajala\ Air.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top:solid 2px #313848;
+    border-bottom: solid 2px #313848;
+  }
+
+  .run-off h1{
+    font-size: 55px;
+    width:350px;
+    height: 225px;
+    margin-left: 75px;
+  }
+
+  .sub1{
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sub1 h1{
+    margin-block: 10px;
+    font-size: 40px;
+  }
+
+  #about-us{
+    width:100%;
+    margin-top: 15px;
+    padding-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-us-text{
+    display:flex;
+    font-size: 18px;
+    line-height:35px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width:800px;
+    height:225px;
+  }
+
+  .about-us-text button{
+    width: 185px;
+    height:50px;
+    display:flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #174bcf;
+    color:white;
+    padding: .3em;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+
+  .testimonials{
+    margin-top: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .testimonials h1{
+    margin-block: 10px;
+    font-size: 40px;
+    padding-bottom: 35px;
+  }
+
+  .testimonial-cards{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .testifier{
+    margin-left: 10px;
+    width:50px;
+    height:50px;
+  }
+
+  .testimonial-cards div{
+    width:335px;
+    height:375px;
+    padding:15px;
+    border-radius: 7px;
+    font-size: 17px;
+    display:flex;
+    box-shadow: 10px 10px 25px #a5a8b1;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    animation: slide-in 1s;
+  }
+
+  .testifer-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rate-star{
+    width:50%;
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .star{
+    width:20px;
+    height:20px;
+  }
+
+  .book{
+    margin-top: 100px;
+    padding: 15px;
+    display:flex;
+    color: black;
+    justify-content:space-around;
+    align-items: center;
+    height:250px;
+  }
+
+  .sub-book{
+    height:150px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+  }
+
+  .book-btn{
+    width: 185px;
+    height:50px;
+    display:flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #174bcf;
+    color:white;
+    padding: .3em;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  footer{
+    margin-top: 10px;
+    padding-top: 35px;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #313848;
+  }
+
+  .signature{
+    padding: 10px;
+    width:75px;
+    height:75px;
+    filter:invert(1);
+    opacity: .5;
+  }

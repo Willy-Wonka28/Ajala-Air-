@@ -27,7 +27,7 @@
             </ul>
             </div>
             <div><a href="" style = "text-decoration: none;">Contact</a></div>
-           <div class="active"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></div>
+            <a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank"><div class="active">Book a consultation</div></a>
         </nav>
 
         <div class="menu">
@@ -54,7 +54,7 @@
           </ul>
           </div>
           <div><a href="" style = "text-decoration: none;">Contact</a></div>
-         <div class="active"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></div>
+          <a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank"> <div class="active">Book a consultation</div></a>
       </nav>
       <h6>
         Àjàlá Air &copy 2024 All Rights Reserved
@@ -140,7 +140,7 @@
         <div class="sub-book">
         <h3>Whether you're pursuing educational aspirations, seeking professional opportunities, or embarking on a cultural exchange journey, Àjàlá Air is here to support you every step of the way.</h3> 
          1 in 4 visas are rejected. Let us help you pass.
-         <button class="book-btn"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></button>
+         <a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank"> <button class="book-btn">Book a consultation</button></a>
         </div>
      </div>
 
@@ -162,9 +162,11 @@
           const menu = document.querySelector(".menu-img");
           document.querySelector(".cancel").addEventListener("click", () => {
             hamburger.style.display = "none";
+            hamburger.style.visibility = "hidden";
           })
           document.querySelector(".menu-img").addEventListener("click", () => {
             hamburger.style.display = "block";
+            hamburger.style.visibility = "visible";
           })
      </script>
 </body>

@@ -474,6 +474,7 @@
       }
       .about-us-text{
         position: relative;
+        margin-top: 35px;
         display:flex;
         font-size: 4vw;
         text-align: center;

@@ -54,6 +54,35 @@
     color:white;
   }
 
+  .resource{
+    position: relative;
+  }
+
+  .resource-list{
+    list-style-type: none;
+    background-color: #313848;
+    padding-top:15px;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    height:210px;
+    width:100px;
+    display:none;
+  }
+
+  .resource:hover .resource-list{
+    display:block;
+  }
+
+  .resource-list li{
+    margin-block: 5px;
+    padding-block:6px;
+  }
+
+  .resource-list li:hover{
+    background-color: #25272c;
+  }
+
   .active{
     width: 185px;
     height:50px;
@@ -66,6 +95,14 @@
     padding: .3em;
     border-radius: 5px;
     font-size: 18px;
+  }
+
+  .menu{
+    display:none
+  }
+
+  .hamburger-menu{
+   display:none; 
   }
 
   .run-off{
@@ -82,13 +119,13 @@
   }
 
   .run-off h1{
-    font-size: 55px;
-    width:350px;
+    font-size: 45px;
+    width:700px;
     height: 225px;
     margin-left: 75px;
   }
 
-  .sub1{
+  #sub1{
     margin-top: 25px;
     display:flex;
     justify-content: center;
@@ -96,7 +133,7 @@
     flex-direction: column;
   }
 
-  .sub1 h1{
+  #sub1 h1{
     margin-top: 10px;
     font-size: 40px;
   }
@@ -213,9 +250,10 @@
     width: 650px;
     height:200px;
     display:flex;
+    text-align: center;
     flex-direction: column;
     justify-content:space-around;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .book-btn{
@@ -296,35 +334,101 @@
         margin-left: 0px;
       }
     
-      nav{
-        width:15vw;
-        height:5vw;
-        padding-left: 1vw;
-        display:flex;
-        justify-content: space-between;
-        align-items: flex-end;
+      .nav{
+       display: none;
+      }
+
+      .menu{
+        display:block;
+      }
+
+      .menu-img{
+        display: block;
+        width:30px;
+        height:30px;
+        filter: invert(1);
+      }
+
+      /*responsive hamburger menu*/
+
+      .hamburger-menu{
+        display:none;
+        position: fixed;
+        top:0;
+        right:0;
+        z-index: 999;
+        width:250px;
+        height:100vh;
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color:#313848;
+      }
+
+      .hamburger-menu .cancel{
+        width:18px;
+        height:18px;
+        filter: invert(1);
+        margin-left: 20px;
+        margin-top: 5px;
+      }
+
+      .hamburger-menu nav{
+        width:250px;
+        height:30vh;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #313848;
+        color:white;
         flex-direction: column;
       }
 
-      nav div{
-        width:4vw;
-        height:.5vw;
-        font-size: 0px;
-        background-color: white;
-      }
-
-      nav div a{
+      .hamburger-menu nav a{
+        width:100px;
+        height:35px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 3.5vw;
+        background-color: #313848;
         color:white;
+        flex-direction: column;
       }
-    
-      .active{
-        width:0vw;
-        height:0vw;
-        font-size: 0px;
-        border: none;
-        visibility: hidden;
 
+      .hamburger-menu nav .resource-list{
+        display:none;
       }
+
+      .hamburger-menu  .resource:hover .resource-list{
+        display:none;
+      }
+
+      .hamburger-menu .active{
+          height:10vw;
+          width: 150px;
+          display:flex;
+          border: none;
+          justify-content: center;
+          align-items: center;
+          background-color: #174bcf;
+          color:white;
+          border-radius: 5px;
+          font-size: 3.5vw;
+      }
+      
+      .hamburger-menu h6{
+        position: absolute;
+        width:100%;
+        bottom:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
     
       .run-off{
         width: 100%;
@@ -341,12 +445,12 @@
     
       .run-off h1{
         font-size:7vw;
-        width:45vw;
-        height:25vw;
+        width:55vw;
+        height:30vw;
         margin-left: 7vw;
       }
     
-      .sub1{
+      #sub1{
         margin-top: 25px;
         display:flex;
         justify-content: center;
@@ -354,7 +458,7 @@
         flex-direction: column;
       }
     
-      .sub1 h1{
+      #sub1 h1{
         margin-top: 10px;
         font-size: 6vw;
       }
@@ -378,19 +482,6 @@
         width:75vw;
       }
     
-      .about-us-text .btn{
-        margin-top: 3vw;
-        height:10vw;
-        width: 225px;
-        display:flex;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        background-color: #174bcf;
-        color:white;
-        border-radius: 5px;
-        font-size: 4.2vw;
-      }
     
     
       .testimonials{
@@ -475,6 +566,7 @@
         flex-direction: column;
         justify-content:space-around;
         align-items: center;
+        text-align: center;
       }
     
       .book-btn{
@@ -510,7 +602,7 @@
       }
     }
 
-    @media (min-width:760px) and (max-width: 819px){
+    @media (min-width:760px) and (max-width: 875px){
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
 
 @keyframes slide-in{
@@ -566,25 +658,101 @@
     flex-direction: column;
   }
 
-  nav div{
-    width:4vw;
-    height:.5vw;
-    font-size: 0px;
-    background-color: white;
-  }
+  .nav{
+    display: none;
+   }
 
-  nav div a{
-    color:white;
-  }
+   .menu{
+     display:block;
+   }
 
-  .active{
-    width:0vw;
-    height:0vw;
-    font-size: 0px;
-    border: none;
-    visibility: hidden;
+   .menu-img{
+     display: block;
+     width:35px;
+     height:35px;
+     filter: invert(1);
+   }
 
-  }
+   /*responsive hamburger menu*/
+
+   .hamburger-menu{
+     display:none;
+     position: fixed;
+     top:0;
+     right:0;
+     z-index: 999;
+     width:350px;
+     height:100vh;
+     padding-top: 10px;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     background-color:#313848;
+   }
+
+   .hamburger-menu .cancel{
+     width:25px;
+     height:25px;
+     filter: invert(1);
+     margin-left: 20px;
+     margin-top: 5px;
+   }
+
+   .hamburger-menu nav{
+     width:250px;
+     height:30vh;
+     padding-left: 20px;
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     background-color: #313848;
+     color:white;
+     flex-direction: column;
+   }
+
+   .hamburger-menu nav a{
+     width:200px;
+     height:35px;
+     display: flex;
+     align-items: flex-start;
+     font-size: 3.5vw;
+     background-color: #313848;
+     color:white;
+     flex-direction: column;
+   }
+
+   .hamburger-menu nav .resource-list{
+     display:none;
+   }
+
+   .hamburger-menu  .resource:hover .resource-list{
+     display:none;
+   }
+
+   .hamburger-menu .active{
+       height:9vw;
+       width: 265px;
+       display:flex;
+       border: none;
+       justify-content: center;
+       align-items: center;
+       background-color: #174bcf;
+       color:white;
+       border-radius: 5px;
+       font-size: 3.5vw;
+   }
+   
+   .hamburger-menu h6{
+     position: absolute;
+     width:100%;
+     bottom:0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-bottom: 15px;
+   }
+
 
   .run-off{
     width: 100%;
@@ -600,13 +768,13 @@
   }
 
   .run-off h1{
-    font-size: 55px;
-    width:350px;
+    font-size: 50px;
+    width:570px;
     height: 225px;
-    margin-left: 75px;
+    margin-left: 55px;
   }
 
-  .sub1{
+  #sub1{
     margin-top: 25px;
     display:flex;
     justify-content: center;
@@ -614,7 +782,7 @@
     flex-direction: column;
   }
 
-  .sub1 h1{
+  #sub1 h1{
     margin-top: 10px;
     font-size: 40px;
   }
@@ -640,19 +808,6 @@
     height:265px;
   }
 
-  .about-us-text .btn{
-    width: 185px;
-    height:50px;
-    display:flex;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #174bcf;
-    color:white;
-    padding: .3em;
-    border-radius: 5px;
-    font-size: 18px;
-  }
 
 
   .testimonials{
@@ -733,7 +888,8 @@
     display:flex;
     flex-direction: column;
     justify-content:space-around;
-    align-items: flex-start;
+    align-items:center;
+    text-align: center;
   }
 
   .book-btn{

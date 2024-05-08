@@ -10,30 +10,70 @@
     <!-- header -->
     <header>
         <div>
-            <h1> Àjàlá Air</h1>
+            <h1>Àjàlá Air</h1>
         </div>
         <!-- the nav elements are: about us, book a consultation and contact -->
-        <nav>
-            <div><a href="#about-us" style = "text-decoration: none;">About Us</a></div>
-            <div><a href="" style = "text-decoration: none;">Resources</a></div>
+        <nav class="nav">
+            <div><a href="#sub1" style = "text-decoration: none;">About Us</a></div>
+            <!-- dropdown menu -->
+            <div class="resource">
+              <a href="" style = "text-decoration: none;">Resources </a>
+             <ul class="resource-list">
+              <li>Study</li>
+              <li>Work</li>
+              <li>Exchange</li>
+              <li>Volunteer</li>
+              <li>Visit</li>
+            </ul>
+            </div>
             <div><a href="" style = "text-decoration: none;">Contact</a></div>
-           <div class="active">Book a consultation</div>
+           <div class="active"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></div>
         </nav>
+
+        <div class="menu">
+          <img src="menu.png" alt="menu" class="menu-img">
+        </div>
+
+        <!-- for the hamburger menu #making it responsive -->
+        <div class="hamburger-menu">
+          <div>
+           <img src="x.png" alt="cancel" class="cancel">
+          </div>
+      <!-- the nav elements are: about us, book a consultation and contact -->
+      <nav>
+          <div><a href="#sub1" style = "text-decoration: none;">About Us</a></div>
+          <!-- dropdown menu -->
+          <div class="resource">
+            <a href="" style = "text-decoration: none;">Resources </a>
+           <ul class="resource-list">
+            <li>Study</li>
+            <li>Work</li>
+            <li>Exchange</li>
+            <li>Volunteer</li>
+            <li>Visit</li>
+          </ul>
+          </div>
+          <div><a href="" style = "text-decoration: none;">Contact</a></div>
+         <div class="active"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></div>
+      </nav>
+      <h6>
+        Àjàlá Air &copy 2024 All Rights Reserved
+      </h6>
+    </div>
+
     </header>
     <!-- main(body) -->
     <main>
         <div class="run-off">
-          <h1>Travel around the WORLD with our help.</h1>
+          <h1>Having difficulty japa-ing? <br> We can help.</h1>
         </div>
         <!-- About us: basically two divs side by side...image on one and short write up with a book consultation button  -->
-        <div class="sub1">
+        <div id="sub1">
           <!-- about-us-heading -->
           <div><h1>What we do</h1></div>
         <div id="about-us">
           <!-- text -->
           <div class="about-us-text">At Ajala Air, we understand the transformative power of international experiences, and we are committed to helping youths and underprivileged individuals realize their dreams of studying, working, or participating in cultural exchange programs abroad. We also specialize in providing comprehensive immigration services, conducting research on immigration trends, and facilitating travel opportunities for persons seeking to explore new horizons.            
-            <!-- book a consultation button -->
-            <div class="btn">Book a consultation</div>
           </div>
           <!-- image -->
           <div></div>
@@ -100,19 +140,16 @@
         <div class="sub-book">
         <h3>Whether you're pursuing educational aspirations, seeking professional opportunities, or embarking on a cultural exchange journey, Àjàlá Air is here to support you every step of the way.</h3> 
          1 in 4 visas are rejected. Let us help you pass.
-         <button class="book-btn">Book a consultation</button>
+         <button class="book-btn"><a href="https://forms.gle/2RpYzrNvCR7FPwcR6" style = "text-decoration: none;" target="_blank">Book a consultation</a></button>
         </div>
-         <div>
-          Let's be friends: ajalaairs@gmail.com
-      </div>
      </div>
 
         <!-- footer with extra links and some contact details, all right reserved etc -->
         <footer>
           <div>
-            <h1>
-              Àjàlá Air
-            </h1>
+            <h4>
+              Àjàlá Air &copy 2024 All Rights Reserved
+            </h4>
           </div>
           <!-- put your signature -->
           <div>
@@ -120,6 +157,15 @@
           </div>
         </footer>
     </main>
-     <script src = "index.js"></script>
+     <script>
+          const hamburger = document.querySelector(".hamburger-menu");
+          const menu = document.querySelector(".menu-img");
+          document.querySelector(".cancel").addEventListener("click", () => {
+            hamburger.style.display = "none";
+          })
+          document.querySelector(".menu-img").addEventListener("click", () => {
+            hamburger.style.display = "block";
+          })
+     </script>
 </body>
 </html>

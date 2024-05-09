@@ -237,7 +237,7 @@
   }
 
   .book{
-    margin-top: 100px;
+    margin-top: 10px;
     padding: 15px;
     display:flex;
     color: black;
@@ -247,8 +247,8 @@
   }
 
   .sub-book{
-    width: 650px;
-    height:200px;
+    width: 350px;
+    height:150px;
     display:flex;
     text-align: center;
     flex-direction: column;
@@ -551,19 +551,18 @@
       }
     
       .book{
-        margin-top:10vw;
         padding: 15px;
         display:flex;
         color: black;
         justify-content:space-around;
         align-items: center;
         flex-direction: column;
-        height:365px;
+        height:150px;
       }
     
       .sub-book{
         width:100%;
-        height:275px;
+        height:100px;
         display:flex;
         text-align: center;
         flex-direction: column;
@@ -735,7 +734,7 @@
 
    .hamburger-menu .active{
        height:9vw;
-       width: 265px;
+       width: 285px;
        display:flex;
        border: none;
        justify-content: center;
@@ -883,12 +882,12 @@
     color: black;
     justify-content:space-around;
     align-items: center;
-    height:250px;
+    height:175px;
   }
 
   .sub-book{
     width: 650px;
-    height:200px;
+    height:100px;
     display:flex;
     flex-direction: column;
     justify-content:space-around;

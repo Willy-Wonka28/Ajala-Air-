@@ -107,12 +107,12 @@
 
   .run-off{
     width: 100%;
-    background-image:url(Ajala\ Air.jpg);
+    background-image:url(Ajala\ Air.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:450px;
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-top:solid 2px #313848;
     border-bottom: solid 2px #313848;
@@ -121,6 +121,10 @@
   .run-off h1{
     font-size: 45px;
     width:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 225px;
     margin-left: 75px;
   }
@@ -408,7 +412,7 @@
 
       .hamburger-menu .active{
           height:10vw;
-          width: 150px;
+          width: 200px;
           display:flex;
           border: none;
           justify-content: center;
@@ -433,12 +437,12 @@
     
       .run-off{
         width: 100%;
-        background-image:url(Ajala\ Air.jpg);
+        background-image:url(Ajala\ Air.png);
         background-repeat: no-repeat;
         background-size: cover;
         height:225px;
         display:flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         border-top:solid 2px #313848;
         border-bottom: solid 2px #313848;
@@ -460,6 +464,9 @@
       }
     
       #sub1 h1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: 6vw;
@@ -734,7 +741,7 @@
 
    .hamburger-menu .active{
        height:9vw;
-       width: 285px;
+       width: 300px;
        display:flex;
        border: none;
        justify-content: center;
@@ -742,7 +749,7 @@
        background-color: #174bcf;
        color:white;
        border-radius: 5px;
-       font-size: 3.5vw;
+       font-size: 3.2vw;
    }
    
    .hamburger-menu h6{
@@ -759,19 +766,19 @@
 
   .run-off{
     width: 100%;
-    background-image:url(Ajala\ Air.jpg);
+    background-image:url(Ajala\ Air.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:450px;
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-top:solid 2px #313848;
     border-bottom: solid 2px #313848;
   }
 
   .run-off h1{
-    font-size: 50px;
+    font-size: 45px;
     width:570px;
     height: 225px;
     margin-left: 55px;
@@ -787,6 +794,9 @@
 
   #sub1 h1{
     margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size: 40px;
   }
 
